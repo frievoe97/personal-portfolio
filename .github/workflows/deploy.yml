@@ -41,7 +41,7 @@ jobs:
 
           # Path for specific folder on server for files deployment
           remote-path: /website
-          local-path: ./build
+          local-path: build/
 
           # Port for SFTP access to server
           remote-port: 22
