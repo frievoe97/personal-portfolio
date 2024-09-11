@@ -27,12 +27,19 @@ jobs:
       - name: Build React App
         run: npm run build
 
-      # Upload to FTP serve
-      - name: Deploy to FTP
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      - name: SFTP-Deploy-Action
+        uses: milanmk/actions-file-deployer@master
         with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./build/
-          server-dir: /website/
+          remote-protocol: sftp
+
+          # Credentials for SFTP access to server using GitHub secrets
+          remote-host: ${{ secrets.FTP_HOST }}
+          remote-user: ${{ secrets.FTP_USERNAME }}
+          remote-password: ${{ secrets.FTP_PASSWORD }}
+
+          # Path for specific folder on server for files deployment
+          remote-path: /website
+          local-path: ./build
+
+          # Port for SFTP access to server
+          remote-port: 22
