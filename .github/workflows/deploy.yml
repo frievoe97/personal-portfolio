@@ -10,13 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Check out the repository code
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0 # Ensure full commit history is fetched
+          fetch-depth: 0
 
-      # Install Node.js and dependencies
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -25,9 +23,13 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
-      # Build the React app
+      # Füge die Umgebungsvariablen zu den Build-Schritten hinzu
       - name: Build React App
-        run: npm run build
+        run: |
+          echo "REACT_APP_EMAILJS_SERVICE_ID=${{ secrets.REACT_APP_EMAILJS_SERVICE_ID }}" >> .env
+          echo "REACT_APP_EMAILJS_TEMPLATE_ID=${{ secrets.REACT_APP_EMAILJS_TEMPLATE_ID }}" >> .env
+          echo "REACT_APP_EMAILJS_USER_ID=${{ secrets.REACT_APP_EMAILJS_USER_ID }}" >> .env
+          npm run build
 
       - name: SFTP uploader
         uses: wangyucode/sftp-upload-action@v2.0.2
