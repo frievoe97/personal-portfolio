@@ -18,14 +18,14 @@
     color: white;
   }
 
-  fieldset {
-    background-color: white;
-  }
+  // fieldset {
+  //   background-color: white;
+  // }
 }
 
 label {
   font-size: 1.2rem;
-  font-family: 'DomaineDispNar-Medium', sans-serif;
+  font-family: "DomaineDispNar-Medium", sans-serif;
 }
 
 .form-flex {
@@ -45,4 +45,23 @@ form {
 .body-form {
   width: 100% !important;
   margin-bottom: 15px !important;
+}
+
+.MuiOutlinedInput-root {
+  background-color: white !important; /* Weißer Hintergrund für das Inputfeld */
+  color: black !important; /* Schwarzer Text */
+}
+
+.MuiInputBase-input {
+  color: black !important; /* Stellt sicher, dass der eingegebene Text sichtbar ist */
+}
+
+.MuiInputLabel-shrink {
+  background-color: white;
+  // color: black !important;
+  padding: 20px;
+  // margin: 0px 20px;
+
+  border-radius: 4px; /* Optionale Rundung für das Label */
+  // box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Leichter Schatten für besseren Kontrast */
 }
