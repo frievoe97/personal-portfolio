@@ -6,8 +6,6 @@ import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import Chip from "@mui/material/Chip";
 import "../assets/styles/Expertise.scss";
 
-import TextField from "@mui/material/TextField";
-
 const labelsFirst = [
   "React",
   "TypeScript",
