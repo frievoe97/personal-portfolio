@@ -1,12 +1,12 @@
 import React from "react";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+// import GitHubIcon from "@mui/icons-material/GitHub";
+// import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import "../assets/styles/Footer.scss";
 
 function Footer() {
   return (
     <footer>
-      <div>
+      {/* <div>
         <a
           href="https://github.com/yujisatojr"
           target="_blank"
@@ -21,7 +21,7 @@ function Footer() {
         >
           <LinkedInIcon />
         </a>
-      </div>
+      </div> */}
       <p>
         A special thanks to{" "}
         <a
@@ -31,7 +31,7 @@ function Footer() {
         >
           Yuji Sato
         </a>{" "}
-        for providing the original template! Built with 💜
+        for providing the original template!
       </p>
     </footer>
   );

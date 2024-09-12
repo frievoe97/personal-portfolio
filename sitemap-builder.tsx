@@ -12,7 +12,7 @@ const paths = [
 
 function generateSitemap() {
   return new Sitemap(paths)
-    .build("http://friedrichvoelkers.de")
+    .build("https://friedrichvoelkers.de")
     .save(path.resolve("./public/sitemap.xml"));
 }
 
