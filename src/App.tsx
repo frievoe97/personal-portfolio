@@ -3,8 +3,8 @@ import {
   Main,
   Timeline,
   Expertise,
-  Project,
   Contact,
+  Project,
   Navigation,
   Footer,
 } from "./components";
