@@ -6,6 +6,7 @@ import {
   Contact,
   Project,
   Navigation,
+  AboutMe,
   Footer,
 } from "./components";
 import FadeIn from "./components/FadeIn";
@@ -64,6 +65,7 @@ function App() {
       <Navigation parentToChild={{ mode }} modeChange={handleModeChange} />
       <FadeIn transitionDuration={700}>
         <Main />
+        <AboutMe />
         <Expertise />
         <Timeline />
         <Project />
