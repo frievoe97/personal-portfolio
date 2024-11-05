@@ -20,17 +20,32 @@ function Timeline() {
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            date="10/2017 - 03/2022"
+            date="since 10/2024"
             iconStyle={{ background: "#5000ca", color: "rgb(39, 40, 34)" }}
             icon={<FontAwesomeIcon icon={faGraduationCap} />}
           >
             <h3 className="vertical-timeline-element-title">
-              Bachelor of Science in Transport Systems
+              Master of Science in Computer Science
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
-              Technische Universität Berlin
+              Hochschule für Technik und Wirtschaft
             </h4>
           </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="04/2022 - 09/2024"
+            iconStyle={{ background: "#5000ca", color: "rgb(39, 40, 34)" }}
+            icon={<FontAwesomeIcon icon={faGraduationCap} />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Bachelor of Science in Computer Science
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Hochschule für Technik und Wirtschaft
+            </h4>
+          </VerticalTimelineElement>
+
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="since 06/2020"
@@ -45,30 +60,18 @@ function Timeline() {
               Planning and Transport Telematics
             </h4>
           </VerticalTimelineElement>
+
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            date="04/2022 - 09/2024"
+            date="10/2017 - 03/2022"
             iconStyle={{ background: "#5000ca", color: "rgb(39, 40, 34)" }}
             icon={<FontAwesomeIcon icon={faGraduationCap} />}
           >
             <h3 className="vertical-timeline-element-title">
-              Bachelor of Science in Computer Science
+              Bachelor of Science in Transport Systems
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
-              Hochschule für Technik und Wirtschaft
-            </h4>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            date="since 10/2024"
-            iconStyle={{ background: "#5000ca", color: "rgb(39, 40, 34)" }}
-            icon={<FontAwesomeIcon icon={faGraduationCap} />}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Master of Science in Computer Science
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Hochschule für Technik und Wirtschaft
+              Technische Universität Berlin
             </h4>
           </VerticalTimelineElement>
         </VerticalTimeline>
