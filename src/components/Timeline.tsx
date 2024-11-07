@@ -25,10 +25,10 @@ function Timeline() {
             icon={<FontAwesomeIcon icon={faGraduationCap} />}
           >
             <h3 className="vertical-timeline-element-title">
-              Master of Science in Computer Science
+              Applied Computer Science (M. Sc.)
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
-              Hochschule für Technik und Wirtschaft
+              University of Applied Sciences, Berlin
             </h4>
           </VerticalTimelineElement>
 
@@ -39,10 +39,10 @@ function Timeline() {
             icon={<FontAwesomeIcon icon={faGraduationCap} />}
           >
             <h3 className="vertical-timeline-element-title">
-              Bachelor of Science in Computer Science
+              Applied Computer Science (B. Sc.)
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
-              Hochschule für Technik und Wirtschaft
+              University of Applied Sciences, Berlin
             </h4>
           </VerticalTimelineElement>
 
@@ -56,7 +56,7 @@ function Timeline() {
               Working student Full-Stack Developer
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
-              Technische Universität Berlin, Department of Transport Systems
+              Technical University of Berlin, Department of Transport Systems
               Planning and Transport Telematics
             </h4>
           </VerticalTimelineElement>
@@ -68,10 +68,10 @@ function Timeline() {
             icon={<FontAwesomeIcon icon={faGraduationCap} />}
           >
             <h3 className="vertical-timeline-element-title">
-              Bachelor of Science in Transport Systems
+              Transport Systems (B. Sc.)
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
-              Technische Universität Berlin
+              Technical University of Berlin
             </h4>
           </VerticalTimelineElement>
         </VerticalTimeline>
