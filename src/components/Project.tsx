@@ -5,6 +5,7 @@ import mock12 from "../assets/images/mock12.png";
 import mock13 from "../assets/images/mock13.png";
 import mock14 from "../assets/images/mock14.png";
 import mock15 from "../assets/images/mock15.png";
+import mock16 from "../assets/images/Whatsapp-Dashboard.png";
 import "../assets/styles/Project.scss";
 
 function Project() {
@@ -12,6 +13,39 @@ function Project() {
     <div className="projects-container" id="projects">
       <h1>Projects</h1>
       <div className="projects-grid">
+        {/* Algorithmus Visualizer */}
+        <div className="project">
+          <h2>Whatsapp Dashboard</h2>
+          <img src={mock16} className="zoom" alt="thumbnail" width="100%" />
+          <p className="project-description">
+            The WhatsApp Dashboard is an interactive tool that allows you to
+            analyze and visualize your WhatsApp chat data in a user-friendly
+            way. With various charts and insights, you can explore message
+            trends, emoji usage, sentiment analysis, and more. The entire
+            analysis runs locally in your browser, ensuring privacy and
+            security. Simply upload your exported WhatsApp chat file and gain
+            deep insights into your messaging behavior.
+          </p>
+          <div className="project-buttons">
+            <a
+              href="https://github.com/frievoe97/whatsapp-dashboard"
+              target="_blank"
+              rel="noreferrer"
+              className="button"
+            >
+              <FaGithub style={{ marginRight: "8px" }} /> GitHub
+            </a>
+            <a
+              href="https://whatsapp-dashboard.friedrichvoelkers.de"
+              target="_blank"
+              rel="noreferrer"
+              className="button"
+            >
+              <FaGlobe style={{ marginRight: "8px" }} /> Live Demo
+            </a>
+          </div>
+        </div>
+
         {/* Chat App */}
         <div className="project">
           <h2>Chat App</h2>
