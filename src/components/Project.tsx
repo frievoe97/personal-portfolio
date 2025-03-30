@@ -5,7 +5,7 @@ import mock12 from "../assets/images/mock12.png";
 import mock13 from "../assets/images/mock13.png";
 import mock14 from "../assets/images/mock14.png";
 import mock15 from "../assets/images/mock15.png";
-import mock16 from "../assets/images/Whatsapp-Dashboard.png";
+import mock16 from "../assets/images/Whatsapp-Dashboard-ezgif.com-resize.gif";
 import "../assets/styles/Project.scss";
 
 function Project() {
