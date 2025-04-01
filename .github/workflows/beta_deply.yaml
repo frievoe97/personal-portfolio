@@ -22,7 +22,6 @@ jobs:
       - name: Use beta HTML + meta files
         run: |
           cp public/index-beta.html public/index.html
-          cp public/.htaccess public/.htaccess
           cp public/robots-beta.txt public/robots.txt
           cp public/sitemap-beta.xml public/sitemap.xml
 
