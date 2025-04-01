@@ -1,9 +1,7 @@
-name: Deploy React App to FTP
+name: Deploy Beta Website
 
 on:
-  push:
-    branches:
-      - master
+  workflow_dispatch:
 
 jobs:
   build:
@@ -12,8 +10,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -23,7 +19,13 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
-      # Füge die Umgebungsvariablen zu den Build-Schritten hinzu
+      - name: Use beta HTML + meta files
+        run: |
+          cp public/index-beta.html public/index.html
+          cp public/.htaccess public/.htaccess
+          cp public/robots-beta.txt public/robots.txt
+          cp public/sitemap-beta.xml public/sitemap.xml
+
       - name: Build React App
         run: |
           echo "REACT_APP_EMAILJS_SERVICE_ID=${{ secrets.REACT_APP_EMAILJS_SERVICE_ID }}" >> .env
@@ -31,7 +33,7 @@ jobs:
           echo "REACT_APP_EMAILJS_USER_ID=${{ secrets.REACT_APP_EMAILJS_USER_ID }}" >> .env
           npm run build
 
-      - name: SFTP uploader
+      - name: Upload to FTP
         uses: wangyucode/sftp-upload-action@v2.0.2
         with:
           host: ${{ secrets.FTP_HOST }}
