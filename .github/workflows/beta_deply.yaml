@@ -13,6 +13,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Test NPM Package Access
+        run: curl -I https://registry.npmjs.org/camelcase-css/-/camelcase-css-2.0.1.tgz
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
