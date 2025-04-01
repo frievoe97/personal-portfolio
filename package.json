@@ -64,6 +64,8 @@
     "@types/react-vertical-timeline-component": "^3.3.6"
   },
   "overrides": {
-    "camelcase-css": "2.0.1"
+    "camelcase-css": "2.0.1",
+    "camelcase": "8.0.0",
+    "camel-case": "5.0.0"
   }
 }
