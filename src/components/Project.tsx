@@ -36,7 +36,7 @@ function Project() {
               <FaGithub style={{ marginRight: "8px" }} /> GitHub
             </a>
             <a
-              href="https://whatsapp-dashboard.friedrichvoelkers.de"
+              href="https://chat-visualizer.de/"
               target="_blank"
               rel="noreferrer"
               className="button"
