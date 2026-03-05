@@ -46,4 +46,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 22
           localDir: "./build"
-          remoteDir: "/website"
+          remoteDir: "/public_html"
