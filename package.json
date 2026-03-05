@@ -14,38 +14,28 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@mui/icons-material": "^5.15.19",
     "@mui/material": "^5.15.19",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.98",
+    "@types/node": "^20.17.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.3.0",
     "react-router-dom": "^6.26.2",
-    "react-router-sitemap": "^1.2.0",
-    "react-scripts": "5.0.1",
     "react-vertical-timeline-component": "^3.6.0",
     "sass": "^1.77.4",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "typescript": "^4.9.5"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build-sitemap": "node sitemap-builder.tsx",
-    "build": "npm run build-sitemap && react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "start": "npm run dev:prod",
+    "prepare:prod": "cp public/index.prod.html index.html",
+    "prepare:beta": "cp public/index.beta.html index.html",
+    "dev": "vite",
+    "dev:prod": "npm run prepare:prod && vite",
+    "dev:beta": "npm run prepare:beta && vite",
+    "build": "vite build",
+    "build:prod": "npm run prepare:prod && vite build",
+    "build:beta": "npm run prepare:beta && vite build",
+    "preview": "vite preview"
   },
   "browserslist": {
     "production": [
@@ -60,7 +50,8 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@types/react-vertical-timeline-component": "^3.3.6"
+    "@types/react-vertical-timeline-component": "^3.3.6",
+    "@vitejs/plugin-react": "^4.3.0",
+    "vite": "^6.0.0"
   }
 }

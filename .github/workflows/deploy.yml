@@ -22,15 +22,15 @@ jobs:
           node-version: "18"
 
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: npm install
 
       - name: Prepare environment
         run: |
-          echo "REACT_APP_EMAILJS_SERVICE_ID=${{ secrets.REACT_APP_EMAILJS_SERVICE_ID }}" >> .env
-          echo "REACT_APP_EMAILJS_TEMPLATE_ID=${{ secrets.REACT_APP_EMAILJS_TEMPLATE_ID }}" >> .env
-          echo "REACT_APP_EMAILJS_USER_ID=${{ secrets.REACT_APP_EMAILJS_USER_ID }}" >> .env
+          echo "VITE_EMAILJS_SERVICE_ID=${{ secrets.REACT_APP_EMAILJS_SERVICE_ID }}" >> .env
+          echo "VITE_EMAILJS_TEMPLATE_ID=${{ secrets.REACT_APP_EMAILJS_TEMPLATE_ID }}" >> .env
+          echo "VITE_EMAILJS_USER_ID=${{ secrets.REACT_APP_EMAILJS_USER_ID }}" >> .env
 
-          cp public/index.prod.html public/index.html
+          cp public/index.prod.html index.html
           cp public/robots.prod.txt public/robots.txt
           cp public/sitemap.prod.xml public/sitemap.xml
           cp public/htaccess.prod public/.htaccess

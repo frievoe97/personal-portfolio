@@ -10,7 +10,6 @@ import {
   Footer,
 } from "./components";
 import FadeIn from "./components/FadeIn";
-import "./index.scss";
 
 function App() {
   // Dark Mode überprüfen
