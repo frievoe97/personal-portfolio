@@ -18,6 +18,21 @@ function Timeline() {
       <div className="items-container">
         <h1>Career and Education History</h1>
         <VerticalTimeline>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="since 04/2026"
+            iconStyle={{ background: "#5000ca", color: "rgb(39, 40, 34)" }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Working student Software
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Televic Rail, Software Department
+            </h4>
+          </VerticalTimelineElement>
+
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
             date="since 10/2024"
@@ -48,7 +63,7 @@ function Timeline() {
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="since 06/2020"
+            date="06/2020 - 03/2026"
             iconStyle={{ background: "#5000ca", color: "rgb(39, 40, 34)" }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
