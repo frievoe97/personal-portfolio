@@ -18,15 +18,28 @@ function Timeline() {
       <div className="items-container">
         <h1>Career and Education History</h1>
         <VerticalTimeline>
-
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="since 04/2026"
+            date="since 10/2026"
             iconStyle={{ background: "#5000ca", color: "rgb(39, 40, 34)" }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <h3 className="vertical-timeline-element-title">
-              Working student Software
+              Software Developer
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Televic Rail, Software Department
+            </h4>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="04/2026 - 09/2026"
+            iconStyle={{ background: "#5000ca", color: "rgb(39, 40, 34)" }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Working Student Software Development
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
               Televic Rail, Software Department
@@ -35,7 +48,7 @@ function Timeline() {
 
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            date="since 10/2024"
+            date="10/2024 - 09/2026"
             iconStyle={{ background: "#5000ca", color: "rgb(39, 40, 34)" }}
             icon={<FontAwesomeIcon icon={faGraduationCap} />}
           >
@@ -68,7 +81,7 @@ function Timeline() {
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <h3 className="vertical-timeline-element-title">
-              Working student Full-Stack Developer
+              Working Student Full-Stack Developer
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
               Technical University of Berlin, Department of Transport Systems
