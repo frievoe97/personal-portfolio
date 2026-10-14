@@ -47,3 +47,4 @@ jobs:
           port: 22
           localDir: "./build"
           remoteDir: "/public_html"
+          concurrency: 1
